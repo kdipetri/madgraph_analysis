@@ -1,13 +1,4 @@
 
-# Structure
-madgraph_analysis
-- cards     # Madgraph cards
-- scripts   # Analysis scripts
-- data      # Processed events / analysis outputs
--- lhe          # LHE files produced by madgraph (not used yet)
--- hepmc        # HEPMC2 files produced by madgraph
--- root         # ROOT files produced by analysis scripts
-- plots     # Plots produced by analysis scripts
 
 # Installation
 For now assumes you have madgraph installed, with pythia and hepmc 
