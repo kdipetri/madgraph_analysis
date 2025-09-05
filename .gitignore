@@ -3,8 +3,9 @@ py.py
 .DS_Store
 mg5_aMC
 MG5_debug
-data/hepmc/*
-data/root/*
-data/lhe/*
-data/h5py/*
-plots/*
+data/hepmc/*.hepmc
+data/root/*.root
+data/lhe/*.lhe
+data/h5py/*.h5py
+plots/*.pdf
+plots/*.png
