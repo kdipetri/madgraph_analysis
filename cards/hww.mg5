@@ -1,0 +1,15 @@
+import model sm
+define p = g u c d s u~ c~ d~ s~ b b~
+generate p p > h , (h > w+ w-, w+ > l+ vl, w- > l- vl~)
+add process p p > h j , (h > w+ w- , w+ > l+ vl, w- > l- vl~) 
+output hww_events 
+launch 
+ shower=Pythia8
+ set ebeam1 6800          # beam energy in GeV (13.6 TeV total)
+ set ebeam2 6800
+ set nevents 10000
+ set systematics_program NONE
+ set iseed 12345
+ set ickkw 0              # LO, no merging
+ set xqcut 0
+done

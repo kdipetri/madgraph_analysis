@@ -1,0 +1,10 @@
+*_events/*
+py.py
+.DS_Store
+mg5_aMC
+MG5_debug
+data/hepmc/*
+data/root/*
+data/lhe/*
+data/h5py/*
+plots/*

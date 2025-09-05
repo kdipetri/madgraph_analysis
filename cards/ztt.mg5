@@ -1,0 +1,19 @@
+import model sm-lepton_masses
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm 
+define vl~ = ve~ vm~ 
+define p = g u c d s u~ c~ d~ s~ b b~
+generate p p > z, (z > ta+ ta- ,ta+ > l+ vl vt~ , ta- > l- vl~ vt )
+add process p p > z j , (z > ta+ ta- ,ta+ > l+ vl vt~ , ta- > l- vl~ vt ) 
+output ztt_events 
+launch 
+ shower=Pythia8
+ set ebeam1 6800          # beam energy in GeV (13.6 TeV total)
+ set ebeam2 6800
+ set nevents 10000
+ set systematics_program NONE
+ set iseed 12345
+ set ickkw 0              # LO, no merging
+ set xqcut 0
+done
